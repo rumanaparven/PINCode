@@ -9,7 +9,7 @@ namespace PinCode
     {
         public void Validation(String pin)
         {
-            Regex reg = new Regex("^[1-9]{1}[0-9]{5}$");
+            Regex reg = new Regex("^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$");
             if (reg.IsMatch(pin))
             {
                 Console.WriteLine("The PIN Code is Valid");
